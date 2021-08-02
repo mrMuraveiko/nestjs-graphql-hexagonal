@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "outDir": "./build",
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@core/base/*": ["./src/core/base/*"],
+      "@core/decorator/*": ["./src/core/decorators/*"],
+      "@core/domain-event": ["./src/core/domain-events"],
+      "@core/exceptions": ["./src/core/exceptions"],
+      "@core/guard": ["./src/core/guard"],
+      "@core/persistence/*": ["./src/core/persistence/*"],
+      "@core/value-object/*": ["./src/core/value-object/*"],
+      "@infrastructure/adapters/*": ["./src/infrastructure/adapters/*"],
+      "@infrastructure/database/*": ["./src/infrastructure/database/*"],
+      "@config/*": ["./src/infrastructure/configs/*"],
+      "@config": ["./src/infrastructure/configs/config"],
+      "@domain/account/*": ["./src/modules/account/domain/*"],
+      "@decorator/*": ["./src/decorators/*"],
+      "@guard/*": ["./src/guards/*"],
+      "@model/*": ["./src/models/*"],
+      "@module/*": ["./src/modules/*"],
+      "@resolver/*": ["./src/resolvers/*"],
+      "@service/*": ["./src/services/*"],
+      "@types": ["./src/graphql"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
